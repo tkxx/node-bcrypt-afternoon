@@ -1,5 +1,5 @@
-import React from 'react';
-import AddTreasure from './AddTreasure';
+import React from "react";
+import AddTreasure from "./AddTreasure";
 
 export default function Treasure(props) {
   const treasure = props.treasure.map((item, index) => {
@@ -7,7 +7,9 @@ export default function Treasure(props) {
   });
   return (
     <div>
-      {props.addMyTreasure ? <AddTreasure addMyTreasure={props.addMyTreasure}/> : null}
+      {props.addMyTreasure ? (
+        <AddTreasure addMyTreasure={props.addMyTreasure} />
+      ) : null}
       {treasure}
     </div>
   );
